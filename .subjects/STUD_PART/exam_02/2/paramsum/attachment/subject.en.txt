@@ -1,0 +1,19 @@
+Nome da tarefa: paramsum
+Arquivos esperados: paramsum.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que exiba o número de argumentos passados ​​para ele, seguido por
+uma nova linha.
+
+Se não houver argumentos, apenas exiba 0 seguido de uma nova linha.
+
+Exemplo:
+
+$>./paramsum 1 2 3 5 7 24
+6
+$>./paramsum 6 12 24 | gato -e
+3$
+$>./paramsum | gato -e
+0$
+$>

@@ -1,0 +1,20 @@
+Nome da tarefa: ft_itoa_base
+Arquivos esperados: ft_itoa_base.c
+Funções permitidas: malloc
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que converta um valor inteiro em uma string terminada em nulo
+usando a base especificada e armazena o resultado em um array char que você deve
+distribuir.
+
+A base é expressa como um número inteiro, de 2 a 16. Os caracteres que compõem
+a base são os dígitos de 0 a 9, seguidos da letra maiúscula de A a F.
+
+Por exemplo, a base 4 seria “0123” e a base 16 seria “0123456789ABCDEF”.
+
+Se a base for 10 e o valor for negativo, a string resultante será precedida por um
+Sinal de menos (-). Com qualquer outra base, o valor é sempre considerado sem sinal.
+
+Sua função deve ser declarada da seguinte forma:
+
+char *ft_itoa_base(int valor, int base);

@@ -1,0 +1,11 @@
+Nome da tarefa: ft_strcspn
+Arquivos esperados: ft_strcspn.c
+Funções permitidas: Nenhuma
+-------------------------------------------------- -------------
+
+Reproduza exatamente o comportamento da função strcspn
+(homem strcspn).
+
+A função deve ser prototipada da seguinte forma:
+
+size_t ft_strcspn(const char *s, const char *rejeitar);

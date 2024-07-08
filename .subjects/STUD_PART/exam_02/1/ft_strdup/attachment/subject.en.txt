@@ -1,0 +1,10 @@
+Nome da tarefa: ft_strdup
+Arquivos esperados: ft_strdup.c
+Funções permitidas: malloc
+-------------------------------------------------- ------------------------------
+
+Reproduza o comportamento da função strdup (man strdup).
+
+Sua função deve ser declarada da seguinte forma:
+
+char *ft_strdup(char *src);

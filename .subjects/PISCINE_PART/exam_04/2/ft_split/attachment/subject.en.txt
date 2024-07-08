@@ -1,0 +1,13 @@
+Nome da tarefa: ft_split
+Arquivos esperados: ft_split.c
+Funções permitidas: malloc
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que pegue uma string, divida-a em palavras e as retorne como
+uma matriz de strings terminada em NULL.
+
+Uma "palavra" é definida como parte de uma string delimitada por espaços/tabulações/novo
+linhas ou pelo início/fim da string.
+
+Sua função deve ser declarada da seguinte forma:
+char    **ft_split(char *str);

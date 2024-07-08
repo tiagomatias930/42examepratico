@@ -1,0 +1,11 @@
+Nome da tarefa: maff_revalpha
+Arquivos esperados: maff_revalpha.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que exiba o alfabeto ao contrário, com letras pares em
+maiúsculas e letras ímpares em minúsculas, seguidas de uma nova linha.
+
+Exemplo:
+$> ./maff_revalpha | cat -e
+zYxWvUtSrQpOnMlKjIhGfEdCbA$

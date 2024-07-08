@@ -1,0 +1,28 @@
+Nome da atribuição: cycle_detector
+Arquivos esperados: cycle_detector.c
+Funções permitidas: malloc, free
+-------------------------------------------------- ------------------------------
+
+Crie uma função chamada cycle_detector que usa uma const t_list *list
+como argumento e verifique se a lista vinculada fornecida não contém ciclos.
+
+Um ciclo é definido quando você passa pelo menos duas vezes pelo mesmo link, quando você
+viajar dentro de uma lista vinculada.
+
+Esta função deve retornar w 1 se detectar um ciclo dentro do link fornecido
+lista, caso contrário retorna 0.
+
+Esta função deve ser prototipada assim:
+
+ int ciclo_detector(const t_list *lista)
+
+O tipo t_list é:
+
+ typedef estrutura s_list
+ {
+ dados internos;
+ estrutura s_list *próximo;
+ } lista_t;
+
+Este tipo será incluído em um cabeçalho denominado "list.h". Você não precisa se entregar
+sua "list.h", usaremos a nossa durante a avaliação.

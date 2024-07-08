@@ -1,0 +1,49 @@
+Nome da tarefa: Flood_fill
+Arquivos esperados: *.c, *.h
+Funções permitidas: -
+-------------------------------------------------- ------------------------------
+Escreva uma função que receba um char ** como um array bidimensional de char, um
+t_point como as dimensões desta matriz e um t_point como ponto inicial.
+A partir do t_point 'begin' fornecido, esta função 'colore' uma zona inteira
+substituindo os caracteres internos pelo caractere 'F'. Uma zona é um conjunto de
+o mesmo caractere delimitado horizontalmente e verticalmente por outros caracteres.
+A função Flood_fill não 'colorirá' na diagonal.
+A função Flood_fill será prototipada assim:
+void Flood_fill(char **tab, tamanho t_point, t_point start);
+A estrutura t_point está disponível dentro do arquivo "t_point.h" anexado a este
+atribuição. Usaremos nosso "t_point.h" para graduação.
+Exemplo :
+$> cat test_main.c
+#include "test_functions.h"
+#include "flood_fill.h"
+int main(void)
+{
+    char **area;
+    t_point size = { 8, 5 };
+    t_point begin = { 2, 2 };
+    char *zone[] = {
+        "11111111",
+        "10001001",
+        "10010001",
+        "10110001",
+        "11100001"
+    };
+    area = make_area(zone);
+    print_tab(area);
+    flood_fill(area, size, begin);
+    putc('\n');
+    print_tab(area);
+    return (0);
+}
+$> gcc flood_fill.c test_main.c test_functions.c -o flood_fill ; ./flood_fill
+1 1 1 1 1 1 1 1
+1 0 0 0 1 0 0 1
+1 0 0 1 0 0 0 1
+1 0 1 1 0 0 0 1
+1 1 1 0 0 0 0 1
+1 1 1 1 1 1 1 1
+1 F F F 1 0 0 1
+1 F F 1 0 0 0 1
+1 F 1 1 0 0 0 1
+1 1 1 0 0 0 0 1
+$>

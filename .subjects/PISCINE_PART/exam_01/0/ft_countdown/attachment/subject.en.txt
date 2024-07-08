@@ -1,0 +1,12 @@
+Nome da tarefa: ft_countdown
+Arquivos esperados: ft_countdown.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que exiba todos os dígitos em ordem decrescente, seguido por um
+nova linha.
+
+Exemplo:
+$> ./ft_countdown | cat -e
+9876543210$
+$>

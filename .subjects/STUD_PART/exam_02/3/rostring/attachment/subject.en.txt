@@ -1,0 +1,34 @@
+Nome da tarefa: rostring
+Arquivos esperados: rostring.c
+Funções permitidas: write, malloc, free
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que pegue uma string e a exiba após girá-la
+uma palavra à esquerda.
+
+Assim, a primeira palavra passa a ser a última e as demais ficam na mesma ordem.
+
+Uma "palavra" é definida como parte de uma string delimitada por espaços/tabulações ou
+pelo início/fim da string.
+
+As palavras serão separadas por apenas um espaço na saída.
+
+Se houver menos de um argumento, o programa exibirá \n.
+
+Exemplo:
+
+$>./rostring "abc   " | cat -e
+abc$
+$>
+$>./rostring "Que la      lumiere soit et la lumiere fut"
+la lumiere soit et la lumiere fut Que
+$>
+$>./rostring "     AkjhZ zLKIJz , 23y"
+zLKIJz , 23y AkjhZ
+$>
+$>./rostring "first" "2" "11000000"
+first
+$>
+$>./rostring | cat -e
+$
+$>

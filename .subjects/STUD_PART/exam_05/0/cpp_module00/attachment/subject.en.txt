@@ -1,0 +1,81 @@
+Nome da atribuição: cpp_module00
+Arquivos esperados: Warlock.cpp Warlock.hpp
+-------------------------------------------------- ------------------------------
+
+Faça uma aula de Warlock. Tem que estar na forma de Coplien.
+
+Possui os seguintes atributos privados:
+* nome (string)
+* título (string)
+
+Como eles são privados, você escreverá os seguintes getters:
+* getName, retorna uma referência a uma string constante
+* getTitle, retorna uma referência a uma string constante
+
+Ambas as funções deverão poder ser chamadas em um Warlock constante.
+
+Crie o seguinte configurador:
+* setTitle, retorna void e faz referência a uma string constante
+
+Seu Warlock também terá, além de tudo o que for exigido pelo Coplien's
+form, um construtor que leva, nesta ordem, seu nome e título. Seu bruxo
+não poderá ser copiado, instanciado por cópia ou instanciado sem um
+nome e um título.
+
+Por exemplo :
+
+Feiticeiro bob; //Não compila
+Warlock bob("Bob", "o magnífico"); // Compila
+Warlock Jim("Jim", "o nauseante"); // Compila
+bob = jim; //Não compila
+Jack bruxo(jim); //Não compila
+
+Após a criação, o Warlock diz:
+
+<NOME>: Parece mais um dia chato.
+
+Claro, sempre que usamos espaços reservados como <NOME>, <TÍTULO>, etc...
+nas saídas, você as substituirá pelo valor apropriado. Sem o < e >.
+
+Quando ele morre, ele diz:
+
+<NOME>: Meu trabalho aqui está concluído!
+
+Nosso Warlock também deve ser capaz de se apresentar, enquanto se vangloria com todas as suas
+poder.
+
+Então você escreverá a seguinte função:
+* void introduzir() const;
+
+Deve exibir:
+
+<NOME>: Eu sou <NOME>, <TÍTULO>!
+
+Aqui está um exemplo de uma função principal de teste e sua saída associada:
+
+int main()
+{
+ Warlock const richard("Richard", "Senhora do Magma");
+ richard.introduce();
+ std::cout << richard.getName() << " - " << richard.getTitle() << std::endl;
+
+ Warlock* jack = new Warlock("Jack", "o Longo");
+ jack->introduzir();
+ jack->setTitle("o Poderoso");
+ jack->introduzir();
+
+ excluir tomada;
+
+ retorn (0);
+}
+
+~$ ./a.out | gato -e
+Richard: Parece mais um dia chato.$
+Richard: Eu sou Richard, Senhora do Magma!$
+Richard – Senhora do Magma$
+Jack: Parece mais um dia chato.$
+Jack: Eu sou Jack, o Comprido!$
+Jack: Eu sou Jack, o Poderoso!$
+Jack: Meu trabalho aqui está concluído!$
+Richard: Meu trabalho aqui está concluído!$
+~$

@@ -1,0 +1,13 @@
+Nome da tarefa: ft_atoi
+Arquivos esperados: ft_atoi.c
+Funções permitidas: Nenhuma
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que converta o argumento da string str em um número inteiro (tipo int)
+e devolve.
+
+Funciona de forma muito parecida com a função atoi(const char *str) padrão, veja o man.
+
+Sua função deve ser declarada da seguinte forma:
+
+int	ft_atoi(const char *str);

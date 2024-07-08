@@ -1,0 +1,20 @@
+Nome da tarefa: ft_list_size
+Arquivos esperados: ft_list_size.c, ft_list.h
+Funções permitidas:
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que retorne o número de elementos da lista vinculada que está
+passou para isso.
+
+Deve ser declarado da seguinte forma:
+
+int ft_list_size(t_list *begin_list);
+
+Você deve usar a seguinte estrutura e entregá-la como um arquivo chamado
+ft_list.h:
+
+typedef struct    s_list
+{
+    struct s_list *next;
+    void          *data;
+}                 t_list;

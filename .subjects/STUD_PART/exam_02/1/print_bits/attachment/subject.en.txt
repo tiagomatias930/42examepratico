@@ -1,0 +1,13 @@
+Nome da atribuição: print_bits
+Arquivos esperados: print_bits.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que receba um byte e o imprima em binário SEM NEWLINE
+NO FINAL.
+
+Sua função deve ser declarada da seguinte forma:
+
+void print_bits(octeto de caractere não assinado);
+
+Exemplo, se você passar 2 para print_bits, imprimirá "00000010"

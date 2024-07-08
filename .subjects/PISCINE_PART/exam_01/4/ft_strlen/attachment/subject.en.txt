@@ -1,0 +1,10 @@
+Nome da tarefa: ft_strlen
+Arquivos esperados: ft_strlen.c
+Funções permitidas:
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que retorne o comprimento de uma string.
+
+Sua função deve ser declarada da seguinte forma:
+
+int	ft_strlen(char *str);

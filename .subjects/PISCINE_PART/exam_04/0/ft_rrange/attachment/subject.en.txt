@@ -1,0 +1,19 @@
+Nome da tarefa: ft_rrange
+Arquivos esperados: ft_rrange.c
+Funções permitidas: malloc
+-------------------------------------------------- ------------------------------
+
+Escreva a seguinte função:
+
+int *ft_rrange(int início, int fim);
+
+Deve alocar (com malloc()) um array de inteiros, preenchê-lo com números consecutivos
+valores que começam no final e terminam no início (incluindo início e fim!), então
+retorne um ponteiro para o primeiro valor da matriz.
+
+Exemplos:
+
+- Com (1, 3) você retornará um array contendo 3, 2 e 1
+- Com (-1, 2) você retornará um array contendo 2, 1, 0 e -1.
+- Com (0, 0) você retornará um array contendo 0.
+- Com (0, -3) você retornará um array contendo -3, -2, -1 e 0.

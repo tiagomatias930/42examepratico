@@ -1,0 +1,39 @@
+Nome da tarefa: xeque-mate
+Arquivos esperados: *.c, *.h
+Funções permitidas: write, malloc, free
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que pegue linhas de um tabuleiro de xadrez como argumento e verifique se
+King está em posição de xeque.
+
+O xadrez é jogado em um tabuleiro de xadrez, um tabuleiro quadrado de 8 casas de comprimento com
+peças específicas: Rei, Rainha, Bispo, Cavalo, Torre e Peões.
+Para este exercício, você jogará apenas com Peões, Bispos, Torres e Dama...
+e obviamente um rei.
+
+Cada peça possui um método específico de movimento, e todos os padrões de captura são
+detalhado no arquivo exemplos.txt.
+
+Uma peça pode capturar apenas a primeira peça inimiga que encontrar ao ser capturada.
+padrões.
+
+O tabuleiro tem tamanho variável, mas permanecerá quadrado. Há apenas um rei
+e todas as outras peças são contra. Todos os outros caracteres, exceto aqueles usados ​​para
+as peças são consideradas quadrados vazios.
+
+O Rei é considerado em posição de xeque quando uma outra peça inimiga pode
+Capture-o. Quando for o caso, você imprimirá “Sucesso” na saída padrão
+seguido por uma nova linha, caso contrário você imprimirá "Fail" seguido por uma nova linha.
+
+Se não houver argumentos, o programa imprimirá apenas uma nova linha.
+
+Exemplos:
+$> ./chessmate '..' '.K' | cat -e
+Fail$
+$> ./chessmate 'R...' '.K..' '..P.' '....' | cat -e
+Success$
+$> ./chessmate 'R...' 'iheK' '....' 'jeiR' | cat -e
+Success$
+$> ./chessmate | cat -e
+$
+$>

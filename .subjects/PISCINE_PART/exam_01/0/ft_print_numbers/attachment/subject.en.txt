@@ -1,0 +1,9 @@
+Nome da tarefa: ft_print_numbers
+Arquivos esperados: ft_print_numbers.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que exiba todos os dígitos em ordem crescente.
+
+Sua função deve ser declarada da seguinte forma:
+void	ft_print_numbers(void);

@@ -1,0 +1,23 @@
+Nome da tarefa: ft_list_remove_if
+Arquivos esperados: ft_list_remove_if.c
+Funções permitidas: free
+-------------------------------------------------- ------------------------------
+
+Escreva uma função chamada ft_list_remove_if que remova do
+lista passada qualquer elemento cujos dados sejam "iguais" aos dados de referência.
+
+Será declarado da seguinte forma:
+
+void ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)());
+
+cmp recebe dois void* e retorna 0 quando ambos os parâmetros são iguais.
+
+Você deve usar o arquivo ft_list.h, que conterá:
+
+$>cat ft_list.h
+typedef struct      s_list
+{
+    struct s_list   *next;
+    void            *data;
+}                   t_list;
+$>

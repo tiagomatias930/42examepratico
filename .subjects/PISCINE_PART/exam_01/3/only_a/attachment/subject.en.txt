@@ -1,0 +1,6 @@
+vNome da tarefa: only_a
+Arquivos esperados: only_a.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que exiba um caractere 'a' na saída padrão.

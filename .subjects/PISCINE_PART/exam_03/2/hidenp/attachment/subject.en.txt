@@ -1,0 +1,25 @@
+Nome da tarefa: hidenp
+Arquivos esperados: hidenp.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa chamado hidenp que receba duas strings e exiba 1
+seguido por uma nova linha se a primeira string estiver oculta na segunda,
+caso contrário, exibe 0 seguido por uma nova linha.
+
+Sejam s1 e s2 strings. Dizemos que s1 está oculto em s2 se for possível
+encontre cada caractere de s1 em s2, na mesma ordem em que aparecem em s1.
+Além disso, a string vazia fica oculta em qualquer string.
+
+Se o número de parâmetros não for 2, o programa exibe uma nova linha.
+
+Exemplos :
+$>./hidenp "fgex.;" "tyf34gdgf;'ektufjhgdgex.;.;rtjynur6" | cat -e
+1$
+$>./hidenp "abc" "2altrb53c.sse" | cat -e
+1$
+$>./hidenp "abc" "btarc" | cat -e
+0$
+$>./hidenp | cat -e
+$
+$>

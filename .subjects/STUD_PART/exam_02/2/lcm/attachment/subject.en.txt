@@ -1,0 +1,23 @@
+Escreva uma função que receba dois unsigned int como parâmetros e retorne o
+LCM calculado desses parâmetros.
+
+LCM (Mínimo Múltiplo Comum) de dois inteiros diferentes de zero é o menor positivo
+inteiro divisível por ambos os inteiros.
+
+Um MMC pode ser calculado de duas maneiras:
+
+- Você pode calcular todos os múltiplos de cada número inteiro até ter um comum
+múltiplo diferente de 0
+
+- Você pode usar o HCF (Maior Fator Comum) desses dois números inteiros e
+calcule da seguinte forma:
+
+ MMC(x, y) = | x*y | /HCF(x, y)
+
+ | x*y | significa "Valor absoluto do produto de x por y"
+
+Se pelo menos um número inteiro for nulo, LCM será igual a 0.
+
+Sua função deve ser prototipada da seguinte forma:
+
+ int não assinado lcm(int não assinado a, int não assinado b);

@@ -1,0 +1,11 @@
+Nome da tarefa: ft_itoa
+Arquivos esperados: ft_itoa.c
+Funções permitidas: malloc
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que receba um int e o converta em uma string terminada em nulo.
+A função retorna o resultado em um array char que você deve alocar.
+
+Sua função deve ser declarada da seguinte forma:
+
+char *ft_itoa(int nbr);

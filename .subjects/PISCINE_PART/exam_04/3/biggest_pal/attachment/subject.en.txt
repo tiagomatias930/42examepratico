@@ -1,0 +1,30 @@
+Nome da tarefa:big_pal
+Arquivos esperados: *.c, *.h
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa chamado maior_pal que receba uma string como argumento e imprima o
+maior palíndromo incluído nesta string, seguido por uma nova linha.
+
+Esta string contém apenas caracteres minúsculos.
+
+Se houver dois palíndromos do mesmo comprimento, será necessário imprimir o último.
+
+Se houver mais ou menos de 1 argumento, seu programa deverá imprimir apenas uma nova linha
+apenas.
+
+Exemplos:
+$> biggest_pal "abcba"
+abcba
+$> biggest_pal "aaaaaaaaaabbcbbaaaa"
+aaaabbcbbaaaa
+$> biggest_pal "aooibdaoiwhoihwdoinzeldaisaboyobasiadlezfdsfnslk"
+zeldaisaboyobasiadlez
+$> biggest_pal "aeibaabaammaabaalek"
+aabaammaabaa
+$> biggest_pal abeb qpinqwjobo qkmnwoiq
+
+$> biggest_pal
+
+$>
+

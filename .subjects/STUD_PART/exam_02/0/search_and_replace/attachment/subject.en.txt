@@ -1,0 +1,27 @@
+Nome da atribuição: search_and_replace
+Arquivos esperados: search_and_replace.c
+Funções permitidas: write, exit
+-------------------------------------------------- ------------------------------
+
+Escreva um programa chamado search_and_replace que receba 3 argumentos, o primeiro
+argumentos é uma string na qual substituir uma letra (2º argumento) por
+outro (3º argumento).
+
+Se o número de argumentos não for 3, basta exibir uma nova linha.
+
+Se o segundo argumento não estiver contido no primeiro (a string)
+então o programa simplesmente reescreve a string seguida por uma nova linha.
+
+Exemplos:
+$>./search_and_replace "Papache est un sabre" "a" "o"
+Popoche est un sobre
+$>./search_and_replace "zaz" "art" "zul" | cat -e
+$
+$>./search_and_replace "zaz" "r" "u" | cat -e
+zaz$
+$>./search_and_replace "jacob" "a" "b" "c" "e" | cat -e
+$
+$>./search_and_replace "ZoZ eT Dovid oiME le METol." "o" "a" | cat -e
+ZaZ eT David aiME le METal.$
+$>./search_and_replace "wNcOre Un ExEmPle Pas Facilw a Ecrirw " "w" "e" | cat -e
+eNcOre Un ExEmPle Pas Facile a Ecrire $

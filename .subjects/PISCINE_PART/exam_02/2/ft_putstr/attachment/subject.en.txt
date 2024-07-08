@@ -1,0 +1,12 @@
+Nome da tarefa: ft_putstr
+Arquivos esperados: ft_putstr.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que exiba uma string na saída padrão.
+
+O ponteiro passado para a função contém o endereço do primeiro
+personagem.
+
+Sua função deve ser declarada da seguinte forma:
+void	ft_putstr(char *str);

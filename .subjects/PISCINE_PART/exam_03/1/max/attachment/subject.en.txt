@@ -1,0 +1,15 @@
+Nome da tarefa: máx.
+Arquivos esperados: max.c
+Funções permitidas:
+-------------------------------------------------- ------------------------------
+
+Escreva a seguinte função:
+
+int max(int* guia, unsigned int len);
+
+O primeiro parâmetro é uma matriz de int, o segundo é o número de elementos em
+a matriz.
+
+A função retorna o maior número encontrado no array.
+
+Se o array estiver vazio, a função retornará 0.

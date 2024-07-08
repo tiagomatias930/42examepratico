@@ -1,0 +1,86 @@
+Nome da atribuição: cpp_module02
+Arquivos esperados: Warlock.cpp Warlock.hpp
+ ASpell.hpp ASpell.cpp
+  ATarget.hpp ATarget.cpp
+  Fwoosh.hpp Fwoosh.cpp
+  Dummy.hpp Dummy.cpp
+  Bola de fogo.hpp Bola de fogo.cpp
+  Polimorfo.hpp Polimorfo.cpp
+  BrickWall.hpp BrickWall.cpp
+  SpellBook.hpp
+  TargetGenerator.hpp TargetGenerator.cpp
+-------------------------------------------------- ------------------------------
+
+Nas classes Warlock, SpellBook e TargetGenerator, a instrução switch é
+PROIBIDO e seu uso resultaria em -42.
+
+Crie os dois feitiços a seguir, no mesmo modelo do Fwoosh:
+
+* Bola de fogo (Nome: "Bola de fogo", Efeitos: "queimado até ficar crocante")
+* Polimorfo (Nome: "Polimorfo", Efeitos: "transformado em uma criatura")
+
+Além disso, só para ele não ter só o boneco para atacar, vamos fazer uma
+novo alvo para ele, que será o BrickWall (Tipo: "Inconspicuous Red-brick Wall").
+
+Agora, crie uma classe SpellBook, em formato canônico, que não possa ser copiada ou instanciada
+por cópia. Terá as seguintes funções:
+
+* void learnSpell(ASpell*), que COPIA um feitiço do livro
+* void esqueçaSpell(string const &), que exclui uma magia do livro, exceto
+ se não estiver lá
+* ASpell* createSpell(string const &), que recebe uma string correspondente a
+ o nome de uma mágica, cria-a e a retorna.
+
+Modifique o Warlock, agora, faça com que ele tenha um livro de feitiços que será criado com
+ele e destruído com ele. Faça também suas funções learnSpell e esqueçaSpell
+chame aqueles do livro de feitiços.
+
+A função launchSpell terá que usar o SpellBook para criar o feitiço
+está tentando lançar.
+
+Faça uma classe TargetGenerator, em formato canônico, e como antes,
+não copiável.
+
+Terá as seguintes funções:
+
+* void learnTargetType(ATarget*), ensina um alvo ao gerador
+
+* void esqueçaTargetType(string const &), que faz o gerador esquecer um
+ tipo de destino se for conhecido
+
+* ATarget* createTarget(string const &), que cria um alvo do
+ tipo especificado
+
+Ufa, está feito. Agora aqui está um teste principal. Não é muito completo, então certifique-se
+para usar o seu próprio também.
+
+int principal()
+{
+ Warlock richard("Richard", "foo");
+ richard.setTitle("Olá, sou Richard, o Bruxo!");
+ Modelo BrickWall1;
+
+ Polimorfo* polimorfo = new Polimorfo();
+ TargetGenerator tarGen;
+
+ tarGen.learnTargetType(&model1);
+ richard.learnSpell(polimorfo);
+
+ Bola de fogo* bola de fogo = new Bola de fogo();
+
+ richard.learnSpell(bola de fogo);
+
+ ATarget* wall = tarGen.createTarget("Parede de tijolo vermelho imperceptível");
+
+ richard.introduce();
+ richard.launchSpell("Polimorfo", *parede);
+ richard.launchSpell("Bola de fogo", *parede);
+}
+
+~$ ./a.out | gato -e
+Richard: Parece mais um dia chato.$
+Richard: Eu sou Richard, Olá, sou Richard, o Feiticeiro!!$
+A discreta parede de tijolos vermelhos foi transformada em uma criatura!$
+A discreta parede de tijolos vermelhos foi totalmente queimada!$
+Richard: Meu trabalho aqui está concluído!$
+~$

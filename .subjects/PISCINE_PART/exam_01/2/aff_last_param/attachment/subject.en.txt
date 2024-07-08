@@ -1,0 +1,18 @@
+Nome da tarefa: aff_last_param
+Arquivos esperados: aff_last_param.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que receba strings como argumentos e exiba seus últimos
+argumento seguido por uma nova linha.
+
+Se o número de argumentos for menor que 1, o programa exibe uma nova linha.
+
+Exemplos:
+
+$> ./aff_last_param "zaz" "mange" "des" "chats" | cat -e
+chats$
+$> ./aff_last_param "j'aime le savon" | cat -e
+j'aime le savon$
+$> ./aff_last_param
+$

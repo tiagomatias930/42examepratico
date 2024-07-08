@@ -1,0 +1,34 @@
+Nome da tarefa: opções
+Arquivos esperados: *.c *.h
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que receba um número indefinido de argumentos que possam ser
+consideradas como opções e escreve na saída padrão uma representação dessas
+opções como grupos de bytes seguidos por uma nova linha.
+
+Uma opção é um argumento que começa com '-' e possui vários caracteres
+que poderia ser: abcdefghijklmnopqrstuvwxyz
+
+Todas as opções são armazenadas em um único int e cada opção representa um pouco disso
+int, e deve ser estocado assim:
+
+00000000 00000000 00000000 00000000
+******zy xwvutsrq ponmlkji hgfedcba
+
+Inicie o programa sem argumentos ou com o sinalizador '-h' ativado deve imprimir
+um uso na saída padrão, conforme mostrado nos exemplos a seguir.
+
+Uma opção errada deve imprimir "Opção Inválida" seguida de uma nova linha.
+
+Exemplos :
+$>./options
+options: abcdefghijklmnopqrstuvwxyz
+$>./options -abc -ijk
+00000000 00000000 00000111 00000111
+$>./options -z
+00000010 00000000 00000000 00000000
+$>./options -abc -hijk
+options: abcdefghijklmnopqrstuvwxyz
+$>./options -%
+Invalid Option

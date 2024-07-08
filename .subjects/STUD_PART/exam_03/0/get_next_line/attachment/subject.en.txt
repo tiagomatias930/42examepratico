@@ -1,0 +1,22 @@
+Nome da tarefa: get_next_line
+Arquivos esperados: get_next_line.c (42_EXAM não pode aceitar .h por enquanto)
+Funções permitidas: read, free, malloc
+-------------------------------------------------- ------------------------------
+
+Escreva uma função chamada get_next_line cujo protótipo deve ser:
+char *get_next_line(intfd);
+
+
+Sua função deve retornar uma linha que foi lida do descritor de arquivo passado como parâmetro. O que chamamos de "linha que foi lida" é uma sucessão de 0 a n caracteres que termina com '\n' (código ascii 0x0a) ou com End Of File (EOF).
+
+A linha deve ser retornada incluindo o '\n' caso haja algum no final da linha que tenha sido lido. Ao atingir o EOF, você deve armazenar o buffer atual em um char * e retorná-lo. Se o buffer estiver vazio, você deverá retornar NULL.
+
+Em caso de erro retorne NULL. Caso não retorne NULL, o ponteiro deverá ser livre. Seu programa será compilado com o sinalizador -D BUFFER_SIZE=xx, que deve ser usado como tamanho do buffer para as chamadas de leitura em suas funções.
+
+Sua função deve estar livre de vazamento de memória. Quando você atingir o EOF, sua função deverá manter 0 memória alocada com malloc, exceto a linha que foi retornada.
+
+Chamar sua função get_next_line() em um loop permitirá, portanto, que você leia o texto disponível em um descritor de arquivo, uma linha por vez, até o final do texto, independentemente do tamanho do texto ou de uma de suas linhas.
+
+Certifique-se de que sua função se comporte bem ao ler um arquivo, a partir da saída padrão, de um redirecionamento, etc.
+
+Nenhuma chamada para outra função será feita no descritor de arquivo entre 2 chamadas de get_next_line(). Finalmente consideramos que get_next_line() possui um comportamento indefinido ao ler um arquivo binário.

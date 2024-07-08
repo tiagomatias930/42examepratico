@@ -1,0 +1,6 @@
+Nome da tarefa: only_z
+Arquivos esperados: only_z.c
+Funções permitidas: escrever
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que exiba um caractere 'z' na saída padrão.

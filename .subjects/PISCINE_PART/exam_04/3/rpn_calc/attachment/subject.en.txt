@@ -1,0 +1,49 @@
+Nome da tarefa: rpn_calc
+Arquivos esperados: *.c, *.h
+Funções permitidas: atoi, printf, write, malloc, free
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que receba uma string que contenha uma equação escrita em
+A notação polonesa reversa (RPN) como seu primeiro argumento, avalia a equação e
+imprime o resultado na saída padrão seguido por uma nova linha.
+
+A notação polonesa reversa é uma notação matemática na qual cada operador
+segue todos os seus operandos. No RPN, cada operador encontrado avalia o
+2 operandos anteriores, e o resultado desta operação torna-se então o primeiro de
+os dois operandos para o operador subsequente. Operandos e operadores devem ser
+espaçados por pelo menos um espaço.
+
+Você deve implementar os seguintes operadores: "+", "-", "*", "/" e "%".
+
+Se a string não for válida ou não houver exatamente um argumento, você deverá imprimir
+"Erro" na saída padrão seguido por uma nova linha.
+
+Todos os operandos fornecidos devem caber em um “int”.
+
+Exemplos de fórmulas convertidas em RPN:
+
+3 + 4 >> 3 4 +
+((1 * 2) * 3) - 4 >> 1 2 * 3 * 4 - ou 3 1 2 * * 4 -
+50 * (5 - (10/9)) >> 5 10 9 / - 50 *
+
+Veja como avaliar uma fórmula em RPN:
+
+1 2 * 3 * 4 -
+2 3 * 4 -
+6 4 -
+2
+
+Ou:
+
+3 1 2 * * 4 -
+3 2 * 4 -
+6 4 -
+2
+
+Exemplos:
+$> ./rpn_calc "1 2 * 3 * 4 +" | cat -e
+10$
+$> ./rpn_calc "1 2 3 4 +" | cat -e
+Error$
+$> ./rpn_calc |cat -e
+Error$

@@ -1,0 +1,31 @@
+Nome da tarefa: colchetes
+Arquivos esperados: *.c *.h
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que receba um número indefinido de strings como argumentos. Para cada
+argumento, o programa imprime na saída padrão "OK" seguido por uma nova linha
+se a expressão estiver entre colchetes corretamente, caso contrário, imprimirá "Erro" seguido por
+uma nova linha.
+
+Os símbolos considerados como 'colchetes' são colchetes '(' e ')', colchetes '['
+e ']'e chaves '{' e '}'. Todos os outros símbolos são simplesmente ignorados.
+
+Um colchete de abertura deve sempre ser fechado pelo colchete de fechamento em bom estado.
+ordem correta. Uma string que não contém nenhum colchete é considerada como um
+string entre colchetes corretamente.
+
+Se não houver argumentos, o programa deverá imprimir apenas uma nova linha.
+
+Exemplos :
+
+$> ./brackets '(johndoe)' | cat -e
+OK$
+$> ./brackets '([)]' | cat -e
+Error$
+$> ./brackets '' '{[(0 + 0)(1 + 1)](3*(-1)){()}}' | cat -e
+OK$
+OK$
+$> ./brackets | cat -e
+$
+$>

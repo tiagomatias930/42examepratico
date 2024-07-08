@@ -1,0 +1,21 @@
+Nome da tarefa: camel_to_snake
+Arquivos esperados: camel_to_snake.c
+Funções permitidas: malloc, free, realloc, write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que receba uma única string no formato lowerCamelCase
+e converte-o em uma string no formato Snake_case.
+
+Uma string lowerCamelCase é uma string onde cada palavra começa com uma letra maiúscula
+exceto o primeiro.
+
+Uma string Snake_case é uma string onde cada palavra está em letras minúsculas, separadas por
+um sublinhado "_".
+
+Exemplos:
+$>./camel_to_snake "hereIsACamelCaseWord"
+here_is_a_camel_case_word
+$>./camel_to_snake "helloWorld" | cat -e
+hello_world$
+$>./camel_to_snake | cat -e
+$

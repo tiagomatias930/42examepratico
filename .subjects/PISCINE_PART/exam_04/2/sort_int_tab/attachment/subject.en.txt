@@ -1,0 +1,15 @@
+Nome da tarefa: sort_int_tab
+Arquivos esperados: sort_int_tab.c
+Funções permitidas:
+-------------------------------------------------- ------------------------------
+
+Escreva a seguinte função:
+
+void sort_int_tab(int *tab, tamanho int não assinado);
+
+Ele deve classificar (no local) o array int 'tab', que contém exatamente 'tamanho'
+membros, em ordem crescente.
+
+As duplas devem ser preservadas.
+
+A entrada é sempre coerente.

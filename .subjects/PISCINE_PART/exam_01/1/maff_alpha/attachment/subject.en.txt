@@ -1,0 +1,12 @@
+Nome da tarefa: maff_alpha
+Arquivos esperados: maff_alpha.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que exiba o alfabeto, com letras pares em maiúsculas, e
+letras ímpares em minúsculas, seguidas por uma nova linha.
+
+Exemplo:
+
+$> ./maff_alpha | cat -e
+aBcDeFgHiJkLmNoPqRsTuVwXyZ$

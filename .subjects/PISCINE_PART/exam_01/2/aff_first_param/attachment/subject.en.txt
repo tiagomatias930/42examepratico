@@ -1,0 +1,18 @@
+Nome da atribuição: aff_first_param
+Arquivos esperados: aff_first_param.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que receba strings como argumentos e exiba seu primeiro
+argumento seguido por um \n.
+
+Se o número de argumentos for menor que 1, o programa exibirá \n.
+
+Exemplo:
+
+$> ./aff_first_param vincent mit "l'ane" dans un pre et "s'en" vint | cat -e
+vincent$
+$> ./aff_first_param "j'aime le fromage de chevre" | cat -e
+j'aime le fromage de chevre$
+$> ./aff_first_param
+$

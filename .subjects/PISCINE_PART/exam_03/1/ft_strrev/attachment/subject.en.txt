@@ -1,0 +1,12 @@
+Nome da tarefa: ft_strrev
+Arquivos esperados: ft_strrev.c
+Funções permitidas:
+-------------------------------------------------- ------------------------------
+
+Escreva uma função que inverte (no local) uma string.
+
+Deve retornar seu parâmetro.
+
+Sua função deve ser declarada da seguinte forma:
+
+char    *ft_strrev(char *str);

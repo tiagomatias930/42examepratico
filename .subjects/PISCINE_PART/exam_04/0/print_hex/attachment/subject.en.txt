@@ -1,0 +1,19 @@
+Nome da atribuição: print_hex
+Arquivos esperados: print_hex.c
+Funções permitidas: write
+-------------------------------------------------- ------------------------------
+
+Escreva um programa que receba um número positivo (ou zero) expresso na base 10,
+e exibe-o na base 16 (letras minúsculas) seguido por uma nova linha.
+
+Se o número de parâmetros não for 1, o programa exibe uma nova linha.
+
+Exemplos:
+$> ./print_hex "10" | cat -e
+a$
+$> ./print_hex "255" | cat -e
+ff$
+$> ./print_hex "5156454" | cat -e
+4eae66$
+$> ./print_hex | cat -e
+$
