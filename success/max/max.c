@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   hidenp.c                                           :+:      :+:    :+:   */
+/*   max.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timatias <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/07 23:30:51 by timatias          #+#    #+#             */
-/*   Updated: 2024/07/07 23:37:13 by timatias         ###   ########.fr       */
+/*   Created: 2024/07/05 14:10:03 by timatias          #+#    #+#             */
+/*   Updated: 2024/07/05 14:17:05 by timatias         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int main(int ac, char *av[])
+int		max(int* tab, unsigned int len)
 {
-	int texto1 = 0, texto2 = 0;
+	int	max, i = 0;
 
-	if (ac == 3)
+	if (len == 0)
+		return (0);
+	max = tab[0];
+
+	for(i = 0; i <= len; i++)
 	{
-		while (av[1][texto1] && av[2][texto2])
-		{
-			if (av[1][texto1] == av[2][texto2])
-				texto1++;
-			texto2++;
-		}
-		if (av[1][texto1] == '\0')
-			write (1, "1", 1);
-		else
-			write (1, "0", 1);
+		if (max < tab[i])
+			max = tab[i];
 	}
-	write (1, "\n", 1);
-	return(0);
+	return (max);
 }

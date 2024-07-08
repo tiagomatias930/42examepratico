@@ -1,38 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   search_and_replace.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: timatias <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/30 20:39:27 by timatias          #+#    #+#             */
-/*   Updated: 2024/06/30 20:48:04 by timatias         ###   ########.fr       */
+/*   Created: 2024/07/05 14:03:28 by timatias          #+#    #+#             */
+/*   Updated: 2024/07/05 14:07:02 by timatias         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <unistd.h>
 
-char    *ft_strdup(char *src)
+int	main(int ac, char *av[])
 {
-	int	length = 0;
 	int	i = 0;
-	char	*strcyp;
 
-	while(src [length] != '\0')
-		length++;
-	strcyp = malloc (sizeof(*strcyp) * (length + 1));
-	if( strcyp != NULL)
+	if (ac ==  4)
 	{
-		while(src[i] != '\0')
+		while(av[1][i] && !av[2][1] && !av[3][1])
 		{
-			strcyp[i] = src[i];
-
-			i ++; 
+			if (av[1][i] == av[2][0])
+				av[1][i] = av[3][0];
+			write (1, &av[1][i], 1);
+			i++;
 		}
 	}
-	return (strcyp);
-
-
-
+	write (1, "\n", 1);
+	return (0);
 }
