@@ -180,7 +180,7 @@ void exam::grade_request(bool i)
     }
     else
     {
-        std::cout << RED << ">>>>>>>>>> Te falta odeio!  Don't Panic<<<<<<<<<<" << RESET << std::endl;
+        std::cout << RED << ">>>>>>>>>> Te falta ódio!  Don't Panic <<<<<<<<<<" << RESET << std::endl;
         sleep(1);
         std::cout << "Erro de segmentacao." << std::endl;
 
