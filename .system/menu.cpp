@@ -211,7 +211,7 @@ int exam::stud_or_swim(void)
     while (choice != "1" && choice != "2")
     {
         system("clear");
-        std::cout << WHITE << GREEN << "     CAMPO  42EXAME " << std::endl;
+        std::cout << WHITE << BOLD << "       CAMPO  42EXAME" << std::endl;
         if(vip)
             std::cout << "   Voce é um " << LIME << "VIP" << WHITE << BOLD << " usuário" << RESET << std::endl << std::endl;
         else

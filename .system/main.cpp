@@ -75,7 +75,7 @@ void exam::exam_prompt(void)
             else
                 std::cout << " ** Abortar ** " << std::endl;
         }
-        else if (entrada == "configurações")
+        else if (entrada == "definicao")
         {
             changex = 1;
             settings_menu();
@@ -84,11 +84,11 @@ void exam::exam_prompt(void)
             else
                 info();
         }
-        else if (entrada == "meavaliar")
+        else if (entrada == "grademe")
         {
             grademe();
         }
-        else if (entrada == "status")
+        else if (entrada == "estado")
         {
             changex = 1;
             if (vip)
