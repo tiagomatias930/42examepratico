@@ -42,10 +42,10 @@ void exam::exam_random_show(void)
 void exam::exam_help()
 {
     std::cout << "Comandos:" << std::endl;
-    std::cout << LIME << "    help:" << RESET << " Exibir esta ajuda" << std::endl;
+    std::cout << LIME << "    ajuda:" << RESET << " Exibir esta ajuda" << std::endl;
     std::cout << LIME << "    settings: " << RESET << "Exibir Menu de Configuracao" << std::endl;
-    std::cout << LIME << "    status:" << RESET << " Exibir informacoes sobre o exame" << std::endl;
-    std::cout << LIME << "    finish:" << RESET << " Sair do Exame" << std::endl;
+    std::cout << LIME << "    estado:" << RESET << " Exibir informacoes sobre o exame" << std::endl;
+    std::cout << LIME << "    fim:" << RESET << " Sair do Exame" << std::endl;
     std::cout << LIME << "    grademe:" << RESET << " Avaliar seu exercicio" << std::endl;
     std::cout << LIME << "    repo_git:" << RESET << " Visitar repo Git" << std::endl;
     std::cout << "Veja o repositório no github para mais comandos 'cheat'" << std::endl;
@@ -55,7 +55,7 @@ void exam::exam_help()
         std::cout << LIME << "    force_success:" << RESET << " forçar um exercício a ser bem-sucedido" << std::endl;
         std::cout << LIME << "    remove_grade_time:" << RESET << " remover limite de tempo entre duas grademe" << std::endl;
         std::cout << LIME << "    gradenow:" << RESET << " avaliar instantaneamente um exercício" << std::endl;
-        std::cout << LIME << "    new_ex:" << RESET << " gerar um novo exercício para o mesmo nível" << std::endl;
+        std::cout << LIME << "    novo_ex:" << RESET << " gerar um novo exercício para o mesmo nível" << std::endl;
     }
 }
 
@@ -99,13 +99,13 @@ void exam::info(void)
     std::cout << "try: " << YELLOW << current_ex->get_assignement() << RESET << std::endl << std::endl;
     std::cout << "Subject location:  " << LIME << current_path() << "/subjects/subject.en.txt" << RESET << std::endl;
     std::cout << "Exercise location: " << RED << current_path() << "/rendu/" << current_ex->get_name() << "/" << RESET << std::endl;
-    std::cout << "Estas aqui " << RED << BOLD << "Nao precisa" << RESET <<" usar o git." << std::endl
+    std::cout << "Atencao " << RED << BOLD << "Nao precisa" << RESET <<" usar o git." << std::endl
               << std::endl;
     std::cout << "Tempo de avaliacao: " << LIME << std::put_time(std::localtime(&end_time), "%d/%m/%Y %H:%M:%S") << RESET << std::endl;
     std::cout << "Tempo restante: " << LIME << remaining_time(end_time) << RESET << std::endl;
     std::cout << std::endl
               << "==================================================================" << std::endl;
-    std::cout << "Use o  \"" << LIME << "grademe" << RESET << "\" para ser avaliado, ou \"" << LIME << "help" << RESET << "\" para obter ajuda" << std::endl;
+    std::cout << "Use o  \"" << LIME << "grademe" << RESET << "\" para ser avaliado, ou \"" << LIME << "ajuda" << RESET << "\" para obter ajuda" << std::endl;
     backup = 1;
 }
 
@@ -155,7 +155,7 @@ void exam::infovip(void)
     std::cout << std::endl
               << "=============================================================================" << std::endl;
     std::cout << " Você pode trabalhar em sua atribuição. Quando estiver certo de que terminou," << std::endl;
-    std::cout << "use o \"" << LIME << "grademe" << RESET << "\" para ser avaliado, ou \"" << LIME << "help" << RESET << "\" para obter ajuda." << std::endl;
+    std::cout << "use o \"" << LIME << "grademe" << RESET << "\" para ser avaliado, ou \"" << LIME << "ajuda" << RESET << "\" para obter ajuda." << std::endl;
 }
 
 // ==> display connexion animation
